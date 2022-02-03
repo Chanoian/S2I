@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Pre Run =====>"
+exec /usr/libexec/s2i/run
