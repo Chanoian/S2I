@@ -13,5 +13,7 @@ LABEL io.k8s.description="Platform for serving static HTML files" \
 # in openshift/base-centos7 as io.openshift.s2i.scripts-url label
 COPY ./s2i/bin/ /usr/libexec/s2i
 
+EXPOSE 8080
+
 # Set the default user for the image, the user itself was created in the base image
 USER 1001
