@@ -5,7 +5,8 @@ FROM registry.redhat.io/rhel8/httpd-24
 LABEL io.k8s.description="Platform for serving static HTML files" \
       io.k8s.display-name="Lighttpd 1.4.35" \
       io.openshift.expose-services="8080:http" \
-      io.openshift.tags="builder,html,lighttpd"
+      io.openshift.tags="builder,html,lighttpd" \
+      io.openshift.s2i.scripts-url="image:///usr/libexec/s2i"
 
 
 
