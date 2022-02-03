@@ -1,0 +1,3 @@
+FROM openshift/httpd:2.4
+
+COPY ./.s2i/bin/ /usr/libexec/s2i
