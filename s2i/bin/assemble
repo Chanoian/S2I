@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "this is my version of assemble script arac"
+cp -Rf /tmp/src/. ./
+/usr/libexec/s2i/assemble
