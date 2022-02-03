@@ -11,7 +11,7 @@ LABEL io.k8s.description="Platform for serving static HTML files" \
 
 # Copy the S2I scripts to /usr/libexec/s2i which is the location set for scripts
 # in openshift/base-centos7 as io.openshift.s2i.scripts-url label
-COPY ./s2i/bin/ /usr/libexec/s2i
+COPY ./.s2i/bin/ /usr/libexec/s2i
 
 EXPOSE 8080
 
