@@ -1,2 +1,8 @@
 FROM registry.redhat.io/rhscl/httpd-24-rhel7
+
+LABEL  io.openshift.expose-services="8080:http" \
+       io.openshift.s2i.scripts-url="image:///usr/libexec/s2i"
+
 COPY ./.s2i/bin/ /usr/libexec/s2i
+
+EXPOSE 8080
