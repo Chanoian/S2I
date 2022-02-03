@@ -2,4 +2,4 @@
 
 echo "this is my version of assemble script arac"
 cp -Rf /tmp/src/*.html ./
-#/usr/libexec/s2i/assemble
+/usr/libexec/s2i/assemble
