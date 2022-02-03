@@ -1,3 +1,2 @@
-FROM openshift/httpd:2.4
-
+FROM registry.redhat.io/rhscl/httpd-24-rhel7
 COPY ./.s2i/bin/ /usr/libexec/s2i
